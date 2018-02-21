@@ -103,7 +103,9 @@ function create_post_type() {
         'singular_name' => __( 'Opportunity' )
       ),
       'public' => true,
-      'has_archive' => true,
+			'has_archive' => true,
+			'taxonomies'  => array( 'category' ),
+			'menu_icon'   => '/wordpress-4.9.2/wordpress/wp-content/themes/optimus/img/icons/optimus-job-icon.png',
     )
   );
 }

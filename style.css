@@ -876,7 +876,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   line-height: 3.5rem;
 }
 
@@ -900,7 +900,7 @@ h2 {
 .main-navigation > * > * > * a {
   padding: 0 .8rem;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 /* ************************************** */
@@ -909,7 +909,7 @@ h2 {
 /* ************************************** */
 /* ************************************** */
 footer {
-  width: 250px;
+  width: 180px;
   position: absolute;
   right: 1.3rem;
   bottom: .3rem;
@@ -1069,8 +1069,125 @@ footer {
 
 .wrapper__services {
   height: 100vh;
-  margin-top: 10rem;
+  margin-top: 7rem;
   justify-content: flex-start;
+}
+
+.wrapper__services h1 {
+  text-align: left;
+  line-height: 5rem;
+}
+
+.optimusBG__Community {
+  height: 100vh;
+  overflow-y: hidden;
+  background: #bbb;
+  background: url("./img/backgrounds/_communityBG.jpg");
+  background-size: cover;
+  color: #fff;
+  font-size: 17px;
+}
+
+.optimusBG__Community .site {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.optimusBG__About {
+  height: 100vh;
+  overflow-y: hidden;
+  background: #bbb;
+  background: url("./img/backgrounds/_about_usBG.jpg");
+  background-size: cover;
+  color: #fff;
+}
+
+.optimusBG__About .site {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.optimusBG__About .site .site-content {
+  margin-top: 6rem;
+}
+
+.wrapper__about {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  width: 92%;
+  margin: 0 auto;
+  padding: .5rem 1rem;
+  text-shadow: rgba(255, 255, 255, 0.8);
+}
+
+.wrapper__about p {
+  padding: 0;
+  margin: 0;
+  padding-bottom: .5rem;
+}
+
+.page-template-content-opportunities {
+  height: 100vh;
+  overflow-y: visible;
+  background: #bbb;
+  background: #333;
+  background-size: cover;
+  color: #fff;
+}
+
+.page-template-content-opportunities footer {
+  width: 250px;
+  position: absolute;
+  right: 1.3rem;
+  bottom: auto;
+}
+
+.page-template-content-opportunities .site {
+  overflow: visible;
+}
+
+.wrapper__opportunities {
+  margin-top: 4rem;
+  padding: 0 3rem;
+}
+
+.opportunities {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 100%;
+}
+
+.opportunity {
+  position: relative;
+  background: #fff;
+  margin: 1rem 0;
+  color: #333;
+  width: 300px;
+}
+
+.opportunity h3 {
+  background: #eee;
+  color: #21759b;
+  margin: 0;
+  min-height: 4rem;
+  padding: .5rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.opportunity__desc {
+  padding: 1rem .5rem 2rem .5rem;
+}
+
+.opportunity a {
+  position: absolute;
+  bottom: 0;
+  background: #eee;
+  color: #21759b;
+  width: 100%;
+  text-align: center;
+  padding: 1.7rem 0;
 }
 
 @media (max-width: 840px) {
@@ -1105,9 +1222,29 @@ footer {
 }
 
 @media (max-width: 620px) {
+  body {
+    max-height: 100%;
+  }
+  footer {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 0 0 2rem;
+  }
+  .optimusBG__About, .optimusBG__Community, .optimusBG__Contact, .optimusBG__Services,
+  .optimusBG__About .site, .optimusBG__Community .site, .optimusBG__Contact .site, .optimusBG__Services .site, .wrapper__services {
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .optimusBG__About .site .site-content, .wrapper__services {
+    margin-top: 0rem;
+  }
+  .wrapper__services, .wrapper__community {
+    padding: 0;
+    min-height: 100vh;
+  }
   h1 {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
   }
   h2 {
     font-size: 1rem;
@@ -1157,6 +1294,7 @@ footer {
   }
   .menu-main-container a {
     color: #fff;
+    font-weight: 500;
   }
   .icon {
     display: inline-block;
@@ -1218,8 +1356,24 @@ footer {
   }
 }
 
+.events {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.events h3 {
+  display: flex;
+  background: #fff;
+  color: #333;
+  padding: .7rem .5rem;
+}
+
+.events p {
+  padding: .7rem .5rem;
+}
+
 .tab__wrapper {
-  max-width: 90%;
+  width: 90%;
 }
 
 .tab__wrapper ul {
@@ -1245,14 +1399,27 @@ footer {
   font-size: 1.5rem;
   line-height: 2rem;
   cursor: pointer;
+  width: fit-content;
 }
 
 .tab__wrapper p {
   text-align: left;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .tab__wrapper .quick__title {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+@media (max-width: 620px) {
+  .tab__wrapper ul {
+    flex-flow: column nowrap;
+  }
+  .tab__wrapper ul li {
+    padding: 0;
+  }
+  .menu-main-container a, .main-navigation > * > * > * a {
+    font-size: 2rem;
+  }
 }

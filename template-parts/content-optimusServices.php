@@ -16,8 +16,9 @@
 			<?php
 			the_content(); ?>
 			<div class="wrapper__services">
-
-			<div class="tab__wrapper">
+				
+				<div class="tab__wrapper">
+						<h1><?php the_title(); ?></h1>
 
 				<ul>
 					<li>

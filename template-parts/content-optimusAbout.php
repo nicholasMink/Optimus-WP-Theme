@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php optimus_post_thumbnail(); ?>
-	<div class="wrapper__home">
+	<div class="wrapper__about">
 		
 			<?php
 			the_content();
