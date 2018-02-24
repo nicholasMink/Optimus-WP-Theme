@@ -1,43 +1,36 @@
 
 # Optimus WordPress Theme
 
-
-<img src="./screenshot.png" width="" height="200px" alt="optimus theme screenshot.png"/>
+![optimus theme screenshot.png](./screenshot.png)
 
 A custom WordPress theme developed for a client which specializes in the energy industry.  
 Tools used:
 Underscores, HTML, Sass, Javascript, PHP, Advanced Custom Fields  
 
-<img src="./img/screenshots/dashboard.png" width="200px" alt="screenshot of wp dashboard"/>
-
-*Custom post-type for job listings*  
-
-<img src="./img/screenshots/OptimusHome.png" width="200px" alt="screenshot of wp dashboard"/>  
-
+![screenshot of wp dashboard](./img/screenshots/OptimusHome.png)
 *Home Page*
 
-<img src="./img/screenshots/about.png" width="200px" alt="screenshot of wp dashboard"/>  
-  
+![screenshot of About Page](./img/screenshots/about.png)
 *About Page*
 
-<img src="./img/screenshots/services.png" width="200px" alt="screenshot of wp dashboard"/>
-  
-*Custom post-type for job listings*
+![screenshot of Services Page](./img/screenshots/services.png)
+*Services Page*
 
-<img src="./img/screenshots/community.png" width="200px" alt="screenshot of wp dashboard"/>
-  
+![screenshot of Community Page](./img/screenshots/community.png)
 *Community Page*
 
-<img src="./img/screenshots/contact.png" width="200px" alt="screenshot of wp dashboard"/>
-  
+
+![screenshot of Contact Page](./img/screenshots/contact.png)
 *Contact Page*
+
+![screenshot of wp dashboard](./img/screenshots/dashboard.png)
+
+*Custom post-type "Opportunities" for job listings*  
 
 *Updates Pending*
 ---
 **Opportunities page** -
-Client is currently using maxhire for applicant tracking. Maxhire was purchased by Bullhorn, which no longer supports updates to their api. This is a possible opportunity to fix such situation.
+Client is currently using maxhire for applicant tracking. Maxhire was purchased by Bullhorn, which no longer supports updates to their api. This is a possible opportunity to fix such situation. Currently, this page has a link to maxhire's old customer portal.
 
-<img src="./img/screenshots/opportunities.png" width="200px" alt="screenshot of wp dashboard"/>
-  
+![screenshot of Opportunities Page](./img/screenshots/opportunities.png)
 *Opportunities (Job listings page)*
-</div>
