@@ -1069,7 +1069,7 @@ footer {
 
 .wrapper__services {
   height: 100vh;
-  margin-top: 7rem;
+  margin-top: 0;
   justify-content: flex-start;
 }
 
@@ -1188,6 +1188,31 @@ footer {
   width: 100%;
   text-align: center;
   padding: 1.7rem 0;
+}
+
+.testimonial__wrapper {
+  margin-top: .5rem;
+}
+
+.testimonial__wrapper .testimonial__block_1, .testimonial__wrapper .testimonial__block_2, .testimonial__wrapper .testimonial__block_3 {
+  display: flex;
+  align-items: flex-start;
+  width: 700px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: .7rem 1rem;
+}
+
+.testimonial__wrapper .testimonial__block_1 p, .testimonial__wrapper .testimonial__block_2 p, .testimonial__wrapper .testimonial__block_3 p {
+  text-align: left;
+  font-size: .8rem;
+  margin-left: 1rem;
+  margin-top: 0;
+}
+
+.testimonial__wrapper .testimonial__block_1 img, .testimonial__wrapper .testimonial__block_2 img, .testimonial__wrapper .testimonial__block_3 img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
 }
 
 @media (max-width: 840px) {
@@ -1405,6 +1430,7 @@ footer {
 .tab__wrapper p {
   text-align: left;
   font-size: 1.1rem;
+  margin-bottom: 0;
 }
 
 .tab__wrapper .quick__title {
@@ -1419,7 +1445,8 @@ footer {
   .tab__wrapper ul li {
     padding: 0;
   }
-  .menu-main-container a, .main-navigation > * > * > * a {
+  .menu-main-container a,
+  .main-navigation > * > * > * a {
     font-size: 2rem;
   }
 }

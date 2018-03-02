@@ -21,18 +21,18 @@
 
 				<ul>
 					<li>
-					<?php if(get_field('first_tab')): ?>
-						<h2 class='first__tab__title'><?php the_field('first_tab'); ?></h2>
+					<?php if(get_field('first_tab_title')): ?>
+						<h2 class='first__tab__title'><?php the_field('first_tab_title'); ?></h2>
 						<?php endif?>
 					</li>
 					<li>
-					<?php if(get_field('second_tab')): ?>
-						<h2 class='second__tab__title'><?php the_field('second_tab'); ?></h2>
+					<?php if(get_field('second_tab_title')): ?>
+						<h2 class='second__tab__title'><?php the_field('second_tab_title'); ?></h2>
 						<?php endif?>
 					</li>
 					<li>
-					<?php if(get_field('third_tab')): ?>
-						<h2 class='third__tab__title'><?php the_field('third_tab'); ?></h2>
+					<?php if(get_field('third_tab_title')): ?>
+						<h2 class='third__tab__title'><?php the_field('third_tab_title'); ?></h2>
 						<?php endif?>
 					</li>
 				</ul>
@@ -40,23 +40,25 @@
 				<!-- Tabs -->
 				<div class="first__tab__content">
 					
-					<?php if(get_field('permanent_placement')): ?>
-							<p><?php the_field('permanent_placement'); ?></p>
+					<?php if(get_field('first_tab_content')): ?>
+							<p><?php the_field('first_tab_content'); ?>
+							<?php get_template_part( 'template-parts/content', 'testimonial' ); ?>
+							</p>
 					<?php endif; ?>
 
 				</div>
 	
 				<div class="second__tab__content">
 					
-					<?php if(get_field('strategic_projects')): ?>
-							<p><?php the_field('strategic_projects'); ?></p>
+					<?php if(get_field('second_tab_content')): ?>
+							<p><?php the_field('second_tab_content'); ?></p>
 					<?php endif; ?>
 
 				</div>
 	
 				<div class="third__tab__content">
-					<?php if(get_field('interim_staff')): ?>
-							<p><?php the_field('interim_staff'); ?></p>
+					<?php if(get_field('third_tab_content')): ?>
+							<p><?php the_field('third_tab_content'); ?></p>
 					<?php endif; ?>
 				</div>
 				<!-- End Tabs -->
